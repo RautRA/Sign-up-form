@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./assets/Norse-Bold.otf);
+  }  
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -9,7 +14,6 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: red;
 }
 
 img, picture, video, canvas, svg {
@@ -23,4 +27,8 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+.odin-link {
+    font-family: norse-bold;
 }
