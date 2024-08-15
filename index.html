@@ -7,45 +7,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="sidebar">
-        <h1>
-            <a href="https://www.theodinproject.com/" class="odin-link">
-                <img src="./assets/odin-lined.png" class="odin-logo" alt="odin logo" />ODIN
-            </a>
-        </h1>
-        <p class="pic-credit">
-            Photo by <a href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luke Miller</a>
-            on <a href="https://unsplash.com/photos/a-full-moon-is-seen-above-the-trees-FUzzFCmJkwk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </p>
-    </div>
     <div class="main-container">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-        <p>You know you want to.</p>
+        <div class="sidebar">
+            <h1>
+                <a href="https://www.theodinproject.com/" class="odin-link">
+                    <img src="./assets/odin-lined.png" class="odin-logo" alt="odin logo" /><span>ODIN</span>
+                </a>
+            </h1>
 
-        <form action="">
-            <p>Let's do this!</p>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" />
+            <p class="pic-credit">
+                Photo by <a href="https://unsplash.com/@bylukemiller?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Luke Miller</a>
+                on <a href="https://unsplash.com/photos/a-full-moon-is-seen-above-the-trees-FUzzFCmJkwk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+        </div>
 
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" />
+        <div class="cta-container">
+            <div class="cta-text-container">
+                <p class="cta-text cta-text-1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.</p>
+                <p class="cta-text cta-text-2">You <span class="italic">know</span> you want to.</p>
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <p class="cta-text cta-text-3">Let's do this!</p>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
+            <form class="sign-up-form">
+                <fieldset class="input-container">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" />
+                </fieldset>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" />
+                <fieldset class="input-container">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" />
+                </fieldset>
 
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" />
+                <fieldset class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                </fieldset>
 
-            <input type="submit" value="Create Account">
-        </form>
-        
-        <p>Already have an account? <a href="#">Log in</a></p>
+                <fieldset class="input-container">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" />
+                </fieldset>
+
+                <fieldset class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                </fieldset>
+
+                <fieldset class="input-container">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" />
+                </fieldset>
+
+                <input type="submit" value="Create Account">
+            </form>
+            
+            <p class="login-prompt">Already have an account? <a href="#">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 @font-face {
-    font-family: norse-bold;
+    font-family: Norse-Bold;
     src: url(./assets/Norse-Bold.otf);
-  }  
+} 
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -11,9 +11,15 @@
     margin: 0;
 }
 
+:root {
+    font-size: 100%;
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 img, picture, video, canvas, svg {
@@ -29,6 +35,154 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+.main-container {
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+    background-image: url("./assets/background-img.jpg");
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebar img {
+    display: inline-block;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.pic-credit {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+}
+
 .odin-link {
-    font-family: norse-bold;
+    font-family: Norse-Bold, sans-serif;
+    font-size: 4rem;
+    padding: 15px;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CTA Styles */
+
+.cta-container {
+    flex: 2;
+    padding: 40px;
+}
+
+.cta-text-container {
+    background-color: #f9f8fc;
+    border-bottom: 1px solid #eae6f4;
+    margin: -40px;
+    padding: 40px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.cta-text {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.cta-text-1 {
+    padding-top: 85px;
+    padding-bottom: 20px;
+    width: 76%;
+}
+
+.cta-text-2 {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.cta-text-3 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+/* Sign-up Form Styles */
+
+.sign-up-form {
+    padding-bottom: 30px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-up-form fieldset {
+    border: none;
+    padding: 0;
+}
+
+.sign-up-form label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2e2e2e;
+    display: block;
+    margin-top: 15px;
+}
+
+.input-container {
+    flex: 1 1 50%;
+}
+
+.sign-up-form input {
+    width: 60%;
+    border: 1px solid #eae6f4;
+    border-radius: 3px;
+}
+
+.sign-up-form input:focus {
+    outline: none;
+    border: 2px solid #728bd4;
+}
+
+.sign-up-form input:invalid {
+    border: 2px solid #ff0000;
+}
+
+.sign-up-form input[type="submit"] {
+    width: 25%;
+    background-color: #003100;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.login-prompt {
+    font-size: 1rem;
+}
+
+.login-prompt a {
+    color: #003100;
+    text-decoration: none;
+    font-weight: 600;
 }
